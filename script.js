@@ -18,6 +18,7 @@ async function doTheStuff() {
       const cell3 = document.createElement("td")
       cell3.innerText = recipe[2]
       row.appendChild(cell3)
+      table.appendChild(row)
     }
   }
 }
