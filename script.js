@@ -1,4 +1,4 @@
-const response = await fetch("recipes.json")
+const response = await fetch("https://bubgamer07.github.io/bricklabs-bricks/recipes.json")
 if (!response.ok) {
   document.write("Couldn't fetch data :(")
   throw new Error(`Error Code: ${response.status}`)
