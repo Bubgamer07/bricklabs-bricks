@@ -4,7 +4,7 @@ async function doTheStuff() {
     document.write("Couldn't fetch data :(")
     throw new Error(`Error Code: ${response.status}`)
   } else {
-    const data = response.json()
+    const data = await response.json()
     const table = document.getElementById("table")
     console.log(data)
     for (const recipe of data) {
