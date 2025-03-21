@@ -6,6 +6,7 @@ async function doTheStuff() {
   } else {
     const data = response.json()
     const table = document.getElementById("table")
+    console.log(data)
     for (const recipe of data) {
       const row = document.createElement("tr")
       const cell1 = document.createElement("td")
